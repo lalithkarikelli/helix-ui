@@ -6,9 +6,9 @@
     box-shadow: $focus-glow;
   }
   @else {
-    background-color: $gray-0;
+    background-color: var(--hxRadio-pristine-radio-facade-bgcolor, $gray-0);
     border: 1px solid currentColor;
-    color: $blue-700;
+    color: var(--hxRadio-pristine-radio-facade-color, $blue-700);
   }
 }
 
@@ -18,26 +18,26 @@
     box-shadow: $focus-glow-invalid;
   }
   @else if $pseudo-state == hover {
-    background-color: $red-status-100;
+    background-color: var(--hxRadio-invalid-radio-facade-hover-bgcolor, $red-status-100);
     border: 1px solid currentColor;
-    color: $red-status-900;
+    color: var(--hxRadio-invalid-radio-facade-hover-color, $red-status-900);
   }
   @else {
     border: 1px solid currentColor;
-    color: $red-status-900;
+    color: var(--hxRadio-invalid-radio-facade-color, $red-status-900);
   }
 }
 
 // ========== DISABLED ==========
 @mixin __radioFacade--disabled($pseudo-state: null) {
   @if $pseudo-state == hover {
-    background-color: $gray-0;
+    background-color: var(--hxRadio-disabled-radio-facade-hover-bgcolor, $gray-0);
     border: 1px solid currentColor;
-    color: $gray-500;
+    color: var(--hxRadio-disabled-radio-facade-hover-color, $gray-500);
   }
   @else {
     border: 1px solid currentColor;
-    color: $gray-500;
+    color: var(--hxRadio-disabled-radio-facade-color, $gray-500);
     cursor: not-allowed;
   }
 }
