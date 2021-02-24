@@ -82,7 +82,7 @@
 }
 
 /// ------------------------------------ ///
-/// ---------- PRIMARY BUTTON ---------- ///
+/// ---------- PRIMARY BUTTON ----------- ///
 /// ------------------------------------ ///
 
 @mixin hxButton--primary {
@@ -109,13 +109,11 @@
 
 @mixin hxButton-active--primary {
   background-color: $blue-900;
-  border-color: transparent;
   color: $gray-0;
 }
 
 @mixin hxButton-disabled--primary {
   background-color: $gray-500;
-  border-color: transparent;
   color: $gray-0;
 }
 
@@ -126,7 +124,6 @@
 
 @mixin hxButton-hover--primary {
   background-color: $blue-700;
-  border-color: transparent;
   color: $gray-0;
 }
 
